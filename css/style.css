@@ -1,0 +1,26 @@
+:root {
+  --background: linear-gradient(
+    180deg,
+    rgba(162, 223, 247, 1) 0%,
+    rgba(0, 119, 190, 1) 50%,
+    rgba(0, 29, 61, 1) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Times New Roman", Times, serif;
+  background: var(--background);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-nav {
+  list-style: none;
+}

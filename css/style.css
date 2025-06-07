@@ -12,6 +12,7 @@
   --text-dark: #001d3d;
 }
 
+/* Header Start */
 * {
   margin: 0;
   padding: 0;
@@ -69,6 +70,7 @@ span {
   background-color: black;
   border-bottom: 2px solid cyan;
 }
+/* Header End */
 /* Main start*/
 main {
   padding-top: 5rem;
@@ -80,75 +82,64 @@ section {
 }
 /* Login Section*/
 .login-section {
-  position: absolute;
-  z-index: 1000;
-  top: 10%;
-  left: 0;
-  background: var(--background);
-  padding: 1.5rem;
-  border-radius: 10px;
-  max-width: 400px;
-  margin: 1rem 0 0 0;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(-100%);
-}
-
-.login-section.active {
-  transform: translateX(0);
-}
-
-.login-overlay {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(5px);
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  padding: 2rem;
 }
 
-.login-box {
-  background: rgba(0, 0, 0, 0.1);
+.login-section.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.login-container {
+  background-color: rgba(70, 84, 207, 0.836);
   padding: 2rem;
   border-radius: 10px;
-  max-width: 400px;
-  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 18px;
-  background: none;
-  font-size: 2rem;
-  cursor: pointer;
-  line-height: 1;
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
   color: var(--text-light);
 }
 
-.close-btn:hover {
-  color: var(--text-dark);
-}
-
-label {
-  display: block;
-  margin: 0.5rem 0 0 0;
-}
-
-input[type="text"],
-input[type="password"] {
+input[type="email"],
+[type="password"] {
   width: 100%;
   padding: 0.5rem;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-  margin: 0 0 0.8rem 0;
+  margin: 0 0 1rem 0;
 }
 
 button[type="submit"] {
   background-color: var(--accent-color);
   border: none;
   padding: 0.6rem 1.2rem;
+  width: 100%;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
@@ -156,9 +147,8 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: white;
-  color: cyan;
-  border-radius: 20px;
-  transition: 1s;
+  transition: 0.5s;
+  transform: scale(1.05);
 }
 /* Section end */
 /* Main end*/

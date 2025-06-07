@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <!-- My Style -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Header start -->
@@ -43,6 +43,7 @@
           deserunt ad.
         </p>
       </section>
+      <!-- About -->
       <section id="about">
         <h2>About</h2>
         <p>
@@ -52,6 +53,7 @@
           possimus, repudiandae quasi repellat obcaecati.
         </p>
       </section>
+      <!-- Action -->
       <section id="action">
         <h2>Action</h2>
         <p>
@@ -64,6 +66,7 @@
           eum! Deleniti et modi fugit laborum saepe.
         </p>
       </section>
+      <!-- News -->
       <section id="news">
         <h2>News</h2>
         <p>
@@ -88,46 +91,36 @@
           nihil vel! Blanditiis iure sed maxime saepe?
         </p>
       </section>
-      <section id="register"></section>
+      <!-- Login start -->
       <section id="login" class="login-section">
-        <div class="login-overlay">
-          <div class="login-box">
-            <button
-              type="button"
-              class="close-btn"
-              aria-label="Close Login Form"
-            >
-              &times;
-            </button>
-            <h2>Login</h2>
-            <form id="login-form">
-              <label for="username">Username:</label>
-              <input
-                type="text"
-                name="username"
-                id="username"
-                required
-                placeholder="Enter Username"
-              />
-              <label for="password">Password:</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                required
-                placeholder="Enter Password"
-              />
-              <button type="submit">Login</button>
-            </form>
-          </div>
+        <div class="login-container">
+          <h2>Login</h2>
+          <form id="login-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Masukkan Email"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Masukkan Password"
+              required
+            />
+            <button type="submit">Login</button>
+          </form>
         </div>
       </section>
+      <!-- Login end -->
     </main>
     <!-- main end -->
     <!-- Footer start -->
     <footer></footer>
     <!-- Footer end -->
     <!-- Script -->
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

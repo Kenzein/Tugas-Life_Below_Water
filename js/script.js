@@ -1,17 +1,33 @@
-// Login class active
-const login = document.querySelector('.navbar-nav a[href="#login"]');
-const loginsection = document.querySelector("#login");
-const closebtn = document.querySelector(".close-btn");
+// Login start
+const loginLink = document.querySelector('.navbar-nav a[href="#login"]');
+const loginSection = document.querySelector("#login");
+const loginContainer = document.querySelector(".login-container");
 
-login.addEventListener("click", function (e) {
-  e.preventDefault();
-  if (loginsection.classList.contains("active")) {
-    loginsection.classList.remove("active");
+// fungsi menampilkan login
+function showLogin() {
+  loginSection.classList.add("active");
+}
+
+// fungsi menyembunyikan login
+function hideLogin() {
+  loginSection.classList.remove("active");
+}
+
+// Event listener for the login link
+loginLink.addEventListener("click", function (e) {
+  e.preventDefault(); // Prevent default anchor behavior
+  if (loginSection.classList.contains("active")) {
+    hideLogin(); // Kondisi hide menyala
   } else {
-    loginsection.classList.add("active");
+    showLogin(); // menampilkan ketika tidak aktif
   }
 });
 
-closebtn.addEventListener("click", () => {
-  loginsection.classList.remove("active");
+// Keadaan click
+loginSection.addEventListener("click", (event) => {
+  // Check if the click is outside the login container
+  if (!loginContainer.contains(event.target)) {
+    hideLogin(); // Hide the login section
+  }
 });
+// Login End

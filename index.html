@@ -79,17 +79,50 @@
           ratione et quia repellendus.
         </p>
       </section>
-      <section id="other">
-        <h2>Other</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ut
-          molestiae dolor quis laboriosam culpa ratione nesciunt fugit alias
-          blanditiis! Maiores nulla quisquam hic repellendus quaerat temporibus
-          voluptatum dolore unde. Dolorum consectetur enim architecto
-          asperiores, aut ex possimus magnam impedit, vel, excepturi nulla sequi
-          at! Voluptates dolore dolorum quia quis corporis nostrum, deleniti
-          nihil vel! Blanditiis iure sed maxime saepe?
-        </p>
+      <section id="register" class="register-section">
+        <div class="register-container">
+          <h2>Register</h2>
+          <form id="register-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="email"
+              name="emai;"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <input
+              type="password"
+              name="confirm-pass"
+              id="confirm-pass"
+              placeholder="Konfirmasi Password"
+              required
+            />
+            <input type="checkbox" id="terms" required />
+            <label for="terms">Saya setuju dengan syarat dan ketentuan</label>
+            <button type="submit">Buat Akun</button>
+          </form>
+        </div>
       </section>
       <!-- Login start -->
       <section id="login" class="login-section">
@@ -110,7 +143,7 @@
               placeholder="Masukkan Password"
               required
             />
-            <button type="submit">Login</button>
+            <button type="submit">Masuk</button>
           </form>
         </div>
       </section>

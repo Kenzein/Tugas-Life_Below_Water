@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <!-- My Style -->
@@ -19,9 +19,9 @@
     <header id="header">
       <!-- Navbar start -->
       <nav class="navbar">
-        <a href="#" class="navbar-logo">Life Below Water<span>.</span></a>
+        <a href="#home" class="navbar-logo">Life Below Water<span>.</span></a>
         <div class="navbar-nav">
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#action">Action</a>
           <a href="#news">News</a>
@@ -68,17 +68,34 @@
       </section>
       <!-- News -->
       <section id="news">
-        <h2>News</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eius
-          animi veritatis unde. Culpa eveniet, tempora, ducimus vel eaque minus
-          odit dolorem fuga, minima beatae totam? Iusto dolorum culpa
-          voluptatum. Totam sunt, molestias alias optio, aut, ullam obcaecati
-          temporibus soluta commodi debitis expedita reiciendis ipsa dignissimos
-          eius odit voluptates! Dolor quidem id ad sunt reiciendis voluptas
-          ratione et quia repellendus.
-        </p>
+        <div class="news-grid">
+          <!-- Berita Pertama -->
+          <div class="news-paper">
+            <h3><a href="">Judul Berita</a></h3>
+            <span class="news-publisher">National Geographic</span
+            ><span class="news-time">00 Juni 2025</span>
+          </div>
+          <!-- Berita Kedua -->
+          <div class="news-paper">
+            <h3><a href="">Judul Berita</a></h3>
+            <span class="news-publisher">National Geographic</span
+            ><span class="news-time">00 Juni 2025</span>
+          </div>
+          <!-- Berita Ketiga -->
+          <div class="news-paper">
+            <h3><a href="">Judul Berita</a></h3>
+            <span class="news-publisher">National Geographic</span
+            ><span class="news-time">00 Juni 2025</span>
+          </div>
+          <!-- Berita Keempat -->
+          <div class="news-paper">
+            <h3><a href="">Judul Berita</a></h3>
+            <span class="news-publisher">National Geographic</span
+            ><span class="news-time">00 Juni 2025</span>
+          </div>
+        </div>
       </section>
+      <!-- Register start -->
       <section id="register" class="register-section">
         <div class="register-container">
           <h2>Register</h2>
@@ -99,7 +116,7 @@
             />
             <input
               type="email"
-              name="emai;"
+              name="email;"
               id="email"
               placeholder="Email"
               required
@@ -124,6 +141,7 @@
           </form>
         </div>
       </section>
+      <!-- Register end -->
       <!-- Login start -->
       <section id="login" class="login-section">
         <div class="login-container">
@@ -132,14 +150,14 @@
             <input
               type="email"
               name="email"
-              id="email"
+              id="email-login"
               placeholder="Masukkan Email"
               required
             />
             <input
               type="password"
               name="password"
-              id="password"
+              id="password-login"
               placeholder="Masukkan Password"
               required
             />

@@ -81,6 +81,49 @@ section {
   padding: 5rem;
   margin: 10px 10px;
 }
+
+/* News Start */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.news-paper {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.news-paper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.news-paper h3 a {
+  font-size: 1.2rem;
+  color: magenta;
+  margin-bottom: 0.5rem;
+}
+
+.news-paper h3 a:hover {
+  text-decoration: underline;
+}
+
+.news-publisher {
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.news-time {
+  font-size: 0.9rem;
+  color: gray;
+}
+/* News End */
+
 /* Register Start */
 .register-section {
   display: flex;

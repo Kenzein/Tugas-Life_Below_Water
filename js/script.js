@@ -65,3 +65,33 @@ loginSection.addEventListener("click", (event) => {
   }
 });
 // Login End
+//Other
+const otherSections = document.querySelectorAll(
+  "#home, #about, #action, #news"
+);
+const otherLinks = document.querySelectorAll(
+  '.navbar-nav a[href="#home"], .navbar-nav a[href="#about"], .navbar-nav a[href="#action"], .navbar-nav a[href="#news"]'
+);
+// Menambahkan event listener untuk setiap section
+otherSections.forEach((section) => {
+  section.addEventListener("click", () => {
+    hideRegis(); // Sembunyikan registrasi
+    hideLogin(); // Sembunyikan login
+  });
+});
+
+// Menambahkan peristiwa listener untuk setiap tautan di navbar
+otherLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); //stay dihalaman yang sama
+    hideRegis(); // Sembunyikan registrasi
+    hideLogin(); // Sembunyikan login
+
+    // Mengambil ID dari tautan yang diklik
+    const targetSection = link.getAttribute("href");
+    // Menggunakan scroll ke section yang dituju
+    document
+      .querySelector(targetSection)
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});

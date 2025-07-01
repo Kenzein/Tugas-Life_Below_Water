@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Iccons -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -27,6 +29,9 @@
           <a href="#news">News</a>
           <a href="#register">Register</a>
           <a href="#login">Login</a>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <i data-feather="menu"></i>
         </div>
       </nav>
       <!-- Navbar end -->
@@ -67,34 +72,7 @@
         </p>
       </section>
       <!-- News -->
-      <section id="news">
-        <div class="news-grid">
-          <!-- Berita Pertama -->
-          <div class="news-paper">
-            <h3><a href="">Judul Berita</a></h3>
-            <span class="news-publisher">National Geographic</span
-            ><span class="news-time">00 Juni 2025</span>
-          </div>
-          <!-- Berita Kedua -->
-          <div class="news-paper">
-            <h3><a href="">Judul Berita</a></h3>
-            <span class="news-publisher">National Geographic</span
-            ><span class="news-time">00 Juni 2025</span>
-          </div>
-          <!-- Berita Ketiga -->
-          <div class="news-paper">
-            <h3><a href="">Judul Berita</a></h3>
-            <span class="news-publisher">National Geographic</span
-            ><span class="news-time">00 Juni 2025</span>
-          </div>
-          <!-- Berita Keempat -->
-          <div class="news-paper">
-            <h3><a href="">Judul Berita</a></h3>
-            <span class="news-publisher">National Geographic</span
-            ><span class="news-time">00 Juni 2025</span>
-          </div>
-        </div>
-      </section>
+
       <!-- Register start -->
       <section id="register" class="register-section">
         <div class="register-container">
@@ -116,7 +94,7 @@
             />
             <input
               type="email"
-              name="email;"
+              name="email"
               id="email"
               placeholder="Email"
               required
@@ -169,8 +147,29 @@
     </main>
     <!-- main end -->
     <!-- Footer start -->
-    <footer></footer>
+    <footer>
+      <div class="footer-container" id="contact">
+        <div class="social">
+          <a href="http://instagram.com" class="social-link"
+            ><i data-feather="instagram"></i>Instagram</a
+          >
+          <a href="http://github.com" class="social-link"
+            ><i data-feather="github"></i>Github</a
+          >
+          <a href="http://linkedin.com" class="social-link"
+            ><i data-feather="linkedin"></i>LinkedIn</a
+          >
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Cincai la. All right reserved</p>
+        </div>
+      </div>
+    </footer>
     <!-- Footer end -->
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
     <!-- Script -->
     <script src="js/script.js"></script>
   </body>

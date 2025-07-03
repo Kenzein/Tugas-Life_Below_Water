@@ -97,11 +97,6 @@ section {
   margin: 20px;
 }
 
-.fakta,
-.nilai {
-  margin-top: 2rem;
-}
-
 .hero {
   text-align: center;
   margin-bottom: 2rem;
@@ -121,9 +116,40 @@ section {
   background-color: white;
   color: var(--text-dark);
   transition: 0.5s;
-  transform: scaleY(1.2rem) 5s;
-  font-family: "Bitcount Grid Double", "Poppins", "Times New Roman", sans-serif;
 }
+
+/* Action Start */
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+td:hover {
+  background-color: gray;
+}
+/* Action End */
+
 /* News Start */
 .news-grid {
   display: grid;
@@ -183,6 +209,17 @@ section {
   color: gray;
 }
 
+.see-more > a {
+  text-align: right;
+  position: absolute;
+  color: inherit;
+  transition: 500ms ease-in;
+}
+.see-more > a:hover {
+  color: inherit;
+  background-color: #001d3d;
+  border-radius: 6px;
+}
 /* News End */
 
 /* Register Start */
@@ -389,7 +426,7 @@ footer .copyright {
     flex-direction: column;
     position: absolute;
     z-index: 999;
-    top: 60px;
+    top: 75px;
     right: 20px;
     padding: 1rem;
     border-radius: 0 0px 20px 20px;
